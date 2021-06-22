@@ -37,6 +37,9 @@ contract Identity {
 		}
 	}
 
+	// This contract can accept ETH
+	function fallback() external payable {}
+
 	function setAddrPrivilege(address addr, bool priv)
 		external
 	{
